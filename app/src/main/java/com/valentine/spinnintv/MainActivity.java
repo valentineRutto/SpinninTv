@@ -1,6 +1,5 @@
 package com.valentine.spinnintv;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -30,7 +29,7 @@ public class MainActivity extends ActionBarActivity {
 
 // Youtube video ID (Required, You can use YouTubeUrlParser to parse Video Id from url)
         intent.putExtra(YouTubePlayerActivity.EXTRA_VIDEO_ID,VIDEO_ID);
-        YouTubeApp.startVideo(Context, VIDEO_ID);
+        YouTubeApp.startVideo(this, VIDEO_ID);
 
 // Youtube player style (DEFAULT as default)
         intent.putExtra(YouTubePlayerActivity.EXTRA_PLAYER_STYLE, YouTubePlayer.PlayerStyle.DEFAULT);
